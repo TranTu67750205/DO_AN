@@ -1,0 +1,2749 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 11 2025 23:11:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4f4h ( 46324) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b51c vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d99c vaddr=40080000 size=0267ch (  9852) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f578h (128376) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003f5a0 vaddr=4008267c size=0bd88h ( 48520) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (229) app_init: Project name:     Receive[0m
+[0;32mI (234) app_init: App version:      1[0m
+[0;32mI (238) app_init: Compile time:     Mar 11 2025 23:11:04[0m
+[0;32mI (244) app_init: ELF file SHA256:  6ba6b8b73...[0m
+[0;32mI (249) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (255) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (259) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (264) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 4008E404 len 00011BFC (70 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+LoRa Receiver Đã Khởi Động
+[0;32mI (337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: P@�?0@�?
+[0m
+[0;32mI (1837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: P@�?0@�?
+[0m
+[0;32mI (3337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: P@�?0@�?
+[0m
+[0;32mI (4837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (5837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (7337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (8837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (10337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (11837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (13337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (14837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (16337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (17837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (18837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (19837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (21337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (22837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (24337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (25837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (27337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (28837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (30337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (31837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (32837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (33837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (34837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (35837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (36837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (37837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (39337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (40837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (42337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (43837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (45337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (46837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (48337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (49337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (50337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (51337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (52337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (53337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (54337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (55337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (56337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (57337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (58337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (59337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (60337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (61837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (63337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (64837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (66337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (67837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (69337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (70837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (72337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (73837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (75337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (76837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (78337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (79837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (81337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (82837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (84337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (85837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (87337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (88837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (90337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (91837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (93337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (94837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (96337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (97837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (99337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (100837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (102337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (103837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (105337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (106837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (108337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (109837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (111337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (112837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (114337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (115837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (117337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (118837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (120337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (121837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (123337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (124837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (126337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (127837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (129337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (130837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (132337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (133837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (135337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (136837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (138337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (139837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (141337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (142837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (144337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (145837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (147337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (148837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (150337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (151837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (153337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (154837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (156337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (157837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (159337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (160837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (162337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (163837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (165337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (166837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (168337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (169837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (171337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (172837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (174337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (175837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (177337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (178837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (180337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (181837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (183337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (184837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (186337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (187837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (189337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (190837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (192337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (193837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (195337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (196837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (198337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (199837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (201337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (202837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (204337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (205837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (207337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (208837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (209837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (211337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (212837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (213837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (215337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (216837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (218337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (219837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (221337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (222837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (224337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (225837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (227337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (228837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (230337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (231837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (233337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (234837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (236337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (237837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (238837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (239837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (240837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (241837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (242837) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (243837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (245337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (246837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (248337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (249837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (251337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (252837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (254337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (255837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (257337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (258837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (260337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (261837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (263337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (264837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (266337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (267837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (269337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (270837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (272337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (273837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (275337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (276837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (278337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (279337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (280837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (282337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (283837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (285337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (286837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (288337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (289337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (290837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (292337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (293837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (295337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (296837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (298337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (299837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (301337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (302837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (304337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (305837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (307337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (308837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (310337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (311837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (313337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (314837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (316337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (317837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (319337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (320837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (322337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (323837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (325337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (326837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (328337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (329837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (331337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (332837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (334337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (335837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (337337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (338837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (340337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (341837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (343337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (344837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (346337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (347837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (349337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (350837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (352337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (353837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (355337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (356837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (358337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (359837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (361337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (362837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (364337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (365837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (367337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (368837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (370337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (371837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (373337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (374837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (376337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (377837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (379337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (380837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (382337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (383837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (385337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (386837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (388337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (389837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (391337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (392837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (394337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (395837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (397337) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (398837) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (400337) LORA_receive: NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+Gói tin không hợp lệ: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0;32mI (401347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (402847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (404347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (405847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (407347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (408847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (410347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (411847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �fK�Z	o�Зkغ�����׿����	�Ǿe\Ȓ��v�/&�������à"C��L��
+[0m
+[0;32mI (413347) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (414347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (415847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (417347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (418847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (420347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (421847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (423347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (424847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (426347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (427847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (429347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (430847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (432347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (433847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (435347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (436847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (438347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (439847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (441347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (442847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (444347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (445847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (447347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (448847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (450347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (451847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (453347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (454847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (456347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (457847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (459347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (460847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (462347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (463847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (465347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (466847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (468347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (469847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (471347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (472847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (474347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (475847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (477347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (478847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (480347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (481847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (483347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (484847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (486347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (487847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (489347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (490847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (492347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (493847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (495347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (496847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (498347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (499847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (501347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (502847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (504347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (505847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (507347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (508847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (510347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (511847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (513347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (514847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (516347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (517847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (519347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (520847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (522347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (523847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (525347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (526847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (528347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (529847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (531347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (532847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (534347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (535847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (537347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (538847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (540347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (541847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (543347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (544847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (546347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (547847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (549347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (550847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (552347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (553847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (555347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (556847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (558347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (559847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (561347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (562847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (564347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (565847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (567347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (568847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (570347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (571847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (573347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (574847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (576347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (577847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (579347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (580847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (582347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (583847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (585347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (586847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (588347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (589847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (591347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (592847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (594347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (595847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (597347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (598847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (600347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (601847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (603347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (604847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (606347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (607847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (609347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (610847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (612347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (613847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (615347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (616847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (618347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (619847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (621347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (622847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (624347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (625847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (627347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (628847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (630347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (631847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (633347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (634847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (636347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (637847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (638847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (640347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (641847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (643347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (644847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (646347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (647847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (649347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (650847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (652347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (653847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (655347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (656847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (658347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (659847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (661347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (662847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (664347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (665847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (667347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (668847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (670347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (671847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (673347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (674847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (676347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (677847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (679347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (680847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (682347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (683847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (685347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (686847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (688347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (689847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (691347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (692847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (694347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (695847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (697347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (698847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (700347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (701847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (703347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (704847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (706347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (707847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (709347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (710847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (712347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (713847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (715347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (716847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (718347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (719847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (721347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (722847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (724347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (725847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (727347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (728847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (730347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (731847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (733347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (734847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (736347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (737847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (739347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (740847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (742347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (743847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (745347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (746847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (748347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (749847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (751347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (752847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (754347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (755847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (757347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (758847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (760347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (761847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (763347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (764847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (766347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (767847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (769347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (770847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (772347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (773847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (775347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (776847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (778347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (779847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (781347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (782847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (784347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (785847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (787347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (788847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (790347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (791847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (793347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (794847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (796347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (797847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (799347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (800847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (802347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (803847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (805347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (806847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (808347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (809847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (811347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (812847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (814347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (815847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: +qy���]���\�����l�|�� ��o�G���I](B���/�
+[0m
+Gói tin không hợp lệ: +qy���]���\�����l�|�� ��o�G���I](B���/�
+[0;32mI (816847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (817847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (818847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (820347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (821847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (823347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (824847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (825847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (827347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (828847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (829847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (830847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (831847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+Nhận từ Node 001: Trạng thái = ON
+[0;32mI (832847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (834347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID001:ON
+[0m
+[0;32mI (835847) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+Nhận từ Node 014: Trạng thái = OFF
+[0;32mI (836847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (838347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (839847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (841347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (842847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (844347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (845847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (847347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (848847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (850347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (851847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (853347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (854847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (856347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (857847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (859347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (860847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (862347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (863847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (865347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (866847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (868347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (869847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (871347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (872847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (874347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (875847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (877347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (878847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (880347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (881847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (883347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (884847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (886347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (887847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (889347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (890847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (892347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (893847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (895347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (896847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (898347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (899847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (901347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (902847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (904347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (905847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (907347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (908847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (910347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (911847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (913347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (914847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (916347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (917847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (919347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (920847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (922347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (923847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (925347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (926847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (928347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (929847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (931347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (932847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (934347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (935847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (937347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (938847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (940347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (941847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (943347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (944847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (946347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (947847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (949347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (950847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (952347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (953847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (955347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (956847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (958347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (959847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (961347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (962847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (964347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (965847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (967347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (968847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (970347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (971847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (973347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (974847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (976347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (977847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (979347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (980847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (982347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (983847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (985347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (986847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (988347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (989847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (991347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (992847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (994347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (995847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (997347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (998847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1000347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1001847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1003347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1004847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1006347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1007847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1009347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1010847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1012347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1013847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1015347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1016847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1018347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1019847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1021347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1022847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1024347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1025847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1027347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1028847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1030347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1031847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1033347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1034847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1036347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1037847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1039347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1040847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1042347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1043847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1045347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1046847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1048347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1049847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1051347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1052847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1054347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1055847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1057347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1058847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1060347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1061847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1063347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1064847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1066347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1067847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1069347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1070847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1072347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1073847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1075347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1076847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1078347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1079847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1081347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1082847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1084347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1085847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1087347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1088847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1090347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1091847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1093347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1094847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1096347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1097847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1099347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1100847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1102347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1103847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1105347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1106847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1108347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1109847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1111347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1112847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1114347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1115847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1117347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1118847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1120347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1121847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1123347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1124847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1126347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1127847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1129347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1130847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1132347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1133847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1135347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1136847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1138347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1139847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1141347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1142847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1144347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1145847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1147347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1148847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1150347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1151847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1153347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1154847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1156347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1157847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1159347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1160847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1162347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1163847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1165347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1166847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1168347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1169847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1171347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1172847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1174347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1175847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1177347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1178847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1180347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1181847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1183347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1184847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1186347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1187847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1189347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1190847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1192347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1193847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1195347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1196847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1198347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1199847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1201347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1202847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1204347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1205847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1207347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1208847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1210347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1211847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1213347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1214847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1216347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1217847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1219347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1220847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1222347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1223847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1225347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1226847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1228347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1229847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1231347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1232847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1234347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1235847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1237347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1238847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1240347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1241847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1243347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1244847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1246347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1247847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1249347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1250847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1252347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1253847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1255347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1256847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1258347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1259847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1261347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1262847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1264347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1265847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1267347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1268847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1270347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1271847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1273347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1274847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1276347) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1277847) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ID014:OFF
+[0m
+[0;32mI (1279347) LORA_receive: NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+Gói tin không hợp lệ: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0;32mI (1280367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1281867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1283367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1284867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1286367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1287867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1289367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1290867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1292367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1293867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1295367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1296867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1298367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1299867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1301367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1302867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1304367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1305867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1307367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1308867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1310367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1311867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1313367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1314867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1316367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1317867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1319367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1320867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1322367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1323867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1325367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1326867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1328367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1329867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1331367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1332867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1334367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1335867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1337367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1338867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1340367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1341867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1343367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1344867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1346367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1347867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1349367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1350867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1352367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1353867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1355367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1356867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1358367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1359867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1361367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1362867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1364367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1365867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1367367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1368867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1370367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1371867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1373367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1374867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1376367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1377867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1379367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1380867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1382367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1383867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1385367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1386867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1388367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1389867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1391367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1392867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1394367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1395867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1397367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1398867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1400367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1401867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1403367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1404867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1406367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1407867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1409367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1410867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1412367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1413867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1415367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1416867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1418367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1419867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1421367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1422867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1424367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1425867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1427367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1428867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1430367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1431867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1433367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1434867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1436367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1437867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1439367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1440867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1442367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1443867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1445367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1446867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1448367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1449867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1451367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1452867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1454367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1455867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1457367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1458867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1460367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1461867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1463367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1464867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1466367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1467867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1469367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1470867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1472367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1473867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1475367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1476867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1478367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1479867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1481367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1482867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1484367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1485867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1487367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1488867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1490367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1491867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1493367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1494867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1496367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1497867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1499367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1500867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1502367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1503867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1505367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1506867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1508367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1509867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1511367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1512867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1514367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1515867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1517367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1518867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1520367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1521867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1523367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1524867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1526367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1527867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1529367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1530867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1532367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1533867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1535367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1536867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1538367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1539867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1541367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1542867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1544367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1545867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1547367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1548867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1550367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1551867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1553367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1554867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1556367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1557867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1559367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1560867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1562367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1563867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1565367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1566867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1568367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1569867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1571367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1572867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1574367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1575867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1577367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1578867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1580367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1581867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1583367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1584867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1586367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1587867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1589367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1590867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1592367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1593867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1595367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1596867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1598367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1599867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1601367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1602867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1604367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1605867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1607367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1608867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1610367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1611867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1613367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1614867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1616367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1617867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1619367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1620867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1622367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1623867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1625367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1626867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1628367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1629867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1631367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1632867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1634367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1635867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1637367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1638867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1640367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1641867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1643367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1644867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1646367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1647867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1649367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1650867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1652367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1653867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1655367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1656867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1658367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1659867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1661367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1662867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1664367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1665867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1667367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1668867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1670367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1671867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1673367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1674867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1676367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1677867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1679367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1680867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1682367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1683867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1685367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1686867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1688367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1689867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1691367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1692867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1694367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1695867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1697367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1698867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1700367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1701867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1703367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1704867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1706367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1707867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1709367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1710867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1712367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1713867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1715367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1716867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1718367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1719867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1721367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1722867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1724367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1725867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1727367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1728867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1730367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1731867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1733367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1734867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1736367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1737867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1739367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1740867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1742367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1743867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1745367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1746867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1748367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1749867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1751367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1752867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1754367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1755867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1757367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1758867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1760367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1761867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1763367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1764867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1766367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1767867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1769367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1770867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1772367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1773867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1775367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1776867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1778367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1779867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1781367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1782867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1784367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1785867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1787367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1788867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1790367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1791867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1793367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1794867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1796367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1797867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1799367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1800867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1802367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1803867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1805367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1806867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1808367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1809867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1811367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1812867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1814367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1815867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1817367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1818867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1820367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1821867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1823367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1824867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1826367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1827867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1829367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1830867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1832367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1833867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1835367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1836867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1838367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1839867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1841367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1842867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1844367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1845867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1847367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1848867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1850367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1851867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1853367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1854867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1856367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1857867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1859367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1860867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1862367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1863867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1865367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1866867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1868367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1869867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1871367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1872867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1874367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1875867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1877367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1878867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1880367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1881867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1883367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1884867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1886367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1887867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1889367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1890867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1892367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1893867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1895367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1896867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1898367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1899867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1901367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1902867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1904367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1905867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1907367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1908867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1910367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1911867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1913367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1914867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1916367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1917867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1919367) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+[0;32mI (1920867) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �Y�#�l�_��4�X%s9�Xت���i�T����.?���,]G~����0�<0Ts�F��P�a�E�����q&����,�a�sV��\���w�Ļ~*���7��^��R��wGg�)
+[0m
+�ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (60) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Mar 11 2025 23:11:18[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.1[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (74) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+[0;32mI (89) boot: Partition Table:[0m
+[0;32mI (92) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (100) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (107) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (115) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4f4h ( 46324) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0001b51c vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0001d99c vaddr=40080000 size=0267ch (  9852) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f578h (128376) map[0m
+[0;32mI (209) esp_image: segment 4: paddr=0003f5a0 vaddr=4008267c size=0bd88h ( 48520) load[0m
+[0;32mI (236) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (236) boot: Disabling RNG early entropy source...[0m
+[0;32mI (248) cpu_start: Multicore app[0m
+[0;32mI (256) cpu_start: Pro cpu start user code[0m
+[0;32mI (256) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (256) app_init: Application information:[0m
+[0;32mI (259) app_init: Project name:     Receive[0m
+[0;32mI (264) app_init: App version:      1[0m
+[0;32mI (268) app_init: Compile time:     Mar 11 2025 23:11:04[0m
+[0;32mI (274) app_init: ELF file SHA256:  6ba6b8b73...[0m
+[0;32mI (279) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (285) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (290) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (294) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (300) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (313) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (319) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (325) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (332) heap_init: At 4008E404 len 00011BFC (70 KiB): IRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (342) spi_flash: flash io: dio[0m
+[0;32mI (347) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+LoRa Receiver Đã Khởi Động
+[0;32mI (367) LORA_receive: CHƯA NHẬN 
