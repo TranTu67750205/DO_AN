@@ -1,9 +1,18 @@
 const express = require("express");
 const mqtt = require("mqtt");
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const app = express();
-const port = 5500;
+const port = 3000; 
+
+// Đọc dữ liệu JSON từ request
+app.use(express.json());
+
+// Cho phép CORS để web có thể gọi API từ trình duyệt, dòng lệnh này rất quan trọng 
+app.use(cors());
+
+// Đặt thư mục public làm thư mục tĩnh
+app.use(express.static("public"));
 
 // Kết nối MongoDB
 mongoose.connect("mongodb://localhost:27017/Datasensor")
@@ -16,13 +25,13 @@ const sensorSchema = new mongoose.Schema({
   humidity: Number
 });
 
-// Tạo Model tương ứng với Collection "sensordatas"
+// Tạo Model tương ứng với Collection "Mydata"
 const MyData = mongoose.model("MyData", sensorSchema); 
 
 // Dữ liệu mẫu cần lưu
 const sampleData = new MyData({
   temperature: 30.4,
-  humidity: 70
+  humidity: 75
 });
 
 // Lưu vào MongoDB
@@ -35,7 +44,7 @@ sampleData.save()
 
 
 // Kết nối với Mosquitto MQTT Broker
-const MQTT_BROKER = "mqtt://localhost:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
+const MQTT_BROKER = "mqtt://192.168.1.8:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
 const MQTT_TOPIC = "sensor/data"; // Topic ESP32 gửi dữ liệu
 
 const mqttClient = mqtt.connect(MQTT_BROKER);
@@ -50,15 +59,32 @@ mqttClient.on("connect", () => {
     });
 });
 
+// Định nghĩa Schema mới cho MongoDB
+const dataSchema = new mongoose.Schema({
+  id: String,                     // ID của EndNode
+  temperature: Number,            // Nhiệt độ
+  humidity: Number,               // Độ ẩm
+  soil: Number,                   // Độ ẩm đất
+  uv: Number,                     // Cường độ UV
+  timestamp: { type: Date, default: Date.now } // Tự động ghi thời gian lưu
+});
+
+// Tạo Model tương ứng với Collection "ESPdata"
+const ESPdata = mongoose.model("ESPdata", dataSchema); 
+
+
 // Nhận dữ liệu từ ESP32 qua MQTT
 mqttClient.on("message", (topic, message) => {
   console.log(`Nhận dữ liệu từ ${topic}: ${message.toString()}`);
 
   try {
       const data = JSON.parse(message.toString()); // Chuyển đổi JSON từ ESP32
-      const newSensorData = new SensorData({
-          temperature: data.temperature,
-          humidity: data.humidity
+      const newSensorData = new ESPdata({
+        id: data.id,
+        temperature: data.temp,
+        humidity: data.hum,
+        soil: data.soil,
+        uv: data.uv
       });
 
       newSensorData.save()
@@ -69,29 +95,20 @@ mqttClient.on("message", (topic, message) => {
   }
 });
 
-// Đặt thư mục public làm thư mục tĩnh
-app.use(express.static("public"));
 
 // API để lấy dữ liệu từ MongoDB
-app.get("/api/sensor", async (req, res) => {
+app.get("/api/sensors", async (req, res) => {
   try {
-      const data = await SensorData.find().sort({ timestamp: -1 }).limit(10);
+      const data = await ESPdata.find().sort({ timestamp: -1 }).limit(10);
       res.json(data);
   } catch (err) {
       res.status(500).json({ error: "Lỗi lấy dữ liệu" });
   }
 });
 
-// REST API: Lưu dữ liệu cảm biến vào MongoDB
-app.post("/api/sensors", async (req, res) => {
-  const newData = new SensorData(req.body);
-  await newData.save();
-  res.json({ message: "Data saved successfully!" });
-});
-
 // khởi động server 
 app.listen(port, () => {
-  console.log(`Server running at http://127.0.0.1:5500/public/index.html`);
+  console.log(`Server đang chạy tại http://localhost:${port}`);
 });
 
 
