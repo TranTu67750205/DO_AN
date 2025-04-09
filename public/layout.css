@@ -1,22 +1,17 @@
-#charts {
+.chart-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 60px; /* Khoảng cách giữa các node */
   }
   
   .chart-wrapper {
-    width: 45%; /* Hai biểu đồ mỗi hàng */
-    min-width: 300px;
-    max-width: 600px;
+    width: 45%; /* Hai biểu đồ nằm cạnh nhau */
     height: 300px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
     background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
-
   body {
     font-family: Arial, sans-serif;
     text-align: center;

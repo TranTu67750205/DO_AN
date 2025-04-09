@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management</title>
+  <link rel="stylesheet" href="layout.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2c7;
+      color: white;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Đăng ký</h2>
+    <label>Tên đăng nhập</label>
+    <input type="text" id="reg-username">
+    <label>Mật khẩu</label>
+    <input type="password" id="reg-password">
+    <label>Vai trò</label>
+    <select id="reg-role">
+      <option value="viewer">Viewer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button onclick="register()">Đăng ký</button>
+  </div>
+
+  <div class="form-container">
+    <h2>Đăng nhập</h2>
+    <label>Tên đăng nhập</label>
+    <input type="text" id="login-username">
+    <label>Mật khẩu</label>
+    <input type="password" id="login-password">
+    <button onclick="login()">Đăng nhập</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="users.js"></script>
+</body>
+</html>
