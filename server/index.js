@@ -59,9 +59,13 @@
     }
   });
 
-  // API để lấy dữ liệu từ MongoDB
+  // API để lấy dữ liệu từ collection espdatas 
   const sensorRoutes = require("./routes/sensors");
   app.use("/api", sensorRoutes);
+
+  // API lấy dữ liệu từ collection users 
+  const userRoutes = require("./routes/user");
+  app.use("/api/users", userRoutes);
 
   // khởi động server 
   app.listen(port, () => {
