@@ -42,7 +42,17 @@
     console.log(`Nhận dữ liệu từ ${topic}: ${message.toString()}`);
 
     try {
-        const data = JSON.parse(message.toString()); // Chuyển đổi JSON từ ESP32
+      // Chuyển đổi JSON từ ESP32
+        const data = JSON.parse(message.toString()); 
+        const deviceId = data.id;
+
+        // Cập nhật thời gian hoạt động của thiết bị
+        /*
+        Site.updateOne(
+          { "devices.deviceId": deviceId },
+          { $set: { "devices.$.lastActive": new Date() } }
+        );*/ 
+
         const newSensorData = new ESPdata({
           id: data.id,
           temperature: data.temp,
@@ -66,6 +76,10 @@
   // API lấy dữ liệu từ collection users 
   const userRoutes = require("./routes/user");
   app.use("/api/users", userRoutes);
+
+  // API lấy dữ liệu từ collection sites 
+  const siteRoutes = require("./routes/site");
+  app.use("/api/sites", siteRoutes);
 
   // khởi động server 
   app.listen(port, () => {
