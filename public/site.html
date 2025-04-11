@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Site Management </title>
+  <link rel="stylesheet" href="style.css" />
+  <style> 
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2c7;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin-bottom: 40px;
+      padding: 50px;
+      border: 3px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* full height */
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+
+    .bounce-button {
+    transition: transform 0.2s ease;
+    }
+
+    .bounce-button:active {
+    transform: scale(0.95);
+    }
+
+    #site-table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    #site-table th, #site-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+    <h1>DANH SÁCH CÁC SITE </h1> <br /><br />
+
+    <div id="site-list"></div>
+
+    <div class="center-container">
+        <div class="form-container">
+            <div id="site-form">
+                <button onclick="showAddForm()" class="bounce-button">THÊM SITE MỚI </button> <br /><br />
+                <label>Tên Địa Điểm:</label><br />
+                <input type="text" id="site-name" /><br /><br />    
+
+                <label>Người Tạo:</label><br />
+                <input type="text" id="creator-name" /><br /><br />
+
+                <label>Device IDs:</label>
+                <div id="device-list-inputs"></div>
+                <button onclick="addDeviceInput()" class="bounce-button">+ Thêm Device</button> <br /><br />
+
+                <button onclick="submitSite()" class="bounce-button">💾 Lưu</button>
+                <button onclick="cancelForm()" class="bounce-button">❌ Hủy</button> <br /><br />
+
+            </div>
+        </div>
+    </div> 
+    
+    <hr />
+    <h2>Danh Sách Site (Bảng)</h2>
+    <table id="site-table" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+        <th>Địa Điểm</th>
+        <th>Người Tạo</th>
+        <th>Device ID(s)</th>
+        <th>Trạng Thái Hoạt Động</th>
+        <th>Điều Khiển</th>
+        </tr>
+    </thead>
+    <tbody id="site-table-body">
+        <!-- Hàng sẽ được thêm ở đây bằng JavaScript -->
+    </tbody>
+    </table>
+
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quản lý Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .site-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .device-list {
+      margin-top: 0.5rem;
+    }
+    .device-status {
+      font-size: 0.9rem;
+      color: green;
+    }
+    .device-status.offline {
+      color: red;
+    }
+    .device-input {
+      display: flex;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Danh sách các Site</h1>
+  <div>
+    <button onclick="showAddForm()">➕ Thêm Site mới</button>
+  </div>
+
+  <div id="site-list"></div>
+
+  <div id="site-form" style="display:none; margin-top: 2rem;">
+    <h2 id="form-title">Thêm Site mới</h2>
+    <input type="hidden" id="site-id" />
+    <label>Tên địa điểm:</label><br />
+    <input type="text" id="site-name" /><br /><br />
+
+    <label>Người tạo:</label><br />
+    <input type="text" id="creator-name" /><br /><br />
+
+    <label>Device IDs:</label>
+    <div id="device-list-inputs"></div>
+    <button onclick="addDeviceInput()">+ Thêm Device</button><br /><br />
+
+    <button onclick="submitSite()">💾 Lưu</button>
+    <button onclick="cancelForm()">❌ Hủy</button>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>

@@ -7,19 +7,33 @@
   <style>
     body {
       font-family: sans-serif;
-      padding: 20px;
+      padding: 200px;
+    }
+
+    .center-container_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* full height */
+    }
+
+    .center-container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* full height */
     }
 
     .form-container {
-      max-width: 400px;
-      margin-bottom: 30px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
+      max-width: 600px;
+      margin-bottom: 400px;
+      padding: 40px;
+      border: 3px solid #ccc;
+      border-radius: 30px;
     }
 
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     label {
@@ -47,31 +61,46 @@
       margin-top: 10px;
       font-weight: bold;
     }
+
+    .bounce-button {
+    transition: transform 0.2s ease;
+    }
+
+    .bounce-button:active {
+    transform: scale(0.95);
+    }
+
   </style>
 </head>
+
+
 <body>
+<div class="center-container_1">
   <div class="form-container">
-    <h2>Đăng ký</h2>
-    <label>Tên đăng nhập</label>
+    <h2>Đăng Ký</h2>
+    <label>Tên Đăng Nhập</label>
     <input type="text" id="reg-username">
-    <label>Mật khẩu</label>
+    <label>Mật Khẩu</label>
     <input type="password" id="reg-password">
-    <label>Vai trò</label>
+    <label>Vai Trò</label>
     <select id="reg-role">
       <option value="viewer">Viewer</option>
       <option value="admin">Admin</option>
     </select>
-    <button onclick="register()">Đăng ký</button>
+    <button onclick="register()" class="bounce-button">Đăng Ký</button>
   </div>
+</div>
 
+<div class="center-container_2">
   <div class="form-container">
-    <h2>Đăng nhập</h2>
-    <label>Tên đăng nhập</label>
+    <h2>Đăng Nhập</h2>
+    <label>Tên Đăng Nhập</label>
     <input type="text" id="login-username">
-    <label>Mật khẩu</label>
+    <label>Mật Khẩu</label>
     <input type="password" id="login-password">
-    <button onclick="login()">Đăng nhập</button>
+    <button onclick="login()" class="bounce-button">Đăng Nhập</button>
   </div>
+</div>
 
   <div id="message"></div>
 

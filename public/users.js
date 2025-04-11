@@ -28,7 +28,7 @@ async function register() {
       localStorage.setItem("token", data.token);
       document.getElementById("message").innerText = "Đăng nhập thành công!";
       // Chuyển trang nếu muốn
-      window.location.href = "dashboard.html";
+      window.location.href = "site.html";
     } else {
       document.getElementById("message").innerText = data.error;
     }
