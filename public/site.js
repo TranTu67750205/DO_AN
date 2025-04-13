@@ -23,7 +23,7 @@ function addDeviceInput(value = "") {
 }
 
 async function submitSite() {
-  const name = document.getElementById("site-name").value;
+  const locationName = document.getElementById("site-name").value;
   const createdBy = document.getElementById("creator-name").value;
   const deviceInputs = document.querySelectorAll(".device-input");
   const devices = Array.from(deviceInputs)
@@ -33,10 +33,8 @@ async function submitSite() {
   try {
     const res = await fetch("http://localhost:3000/api/sites/add", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ locationName, createdAt, createdBy, devices }),
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ locationName, createdBy, devices }),
     });
 
     const data = await res.json();
@@ -48,30 +46,31 @@ async function submitSite() {
   }
 }
 
-async function loadSiteList() {
-  try {
-    const res = await fetch("http://localhost:3000/api/sites");
-    const sites = await res.json();
+async function loadSiteList() {  
+  const res = await fetch("http://localhost:3000/api/sites/load");
+  const sites = await res.json();
 
-    const tbody = document.getElementById("site-table-body");
-    tbody.innerHTML = "";
+  const tbody = document.getElementById("site-table");
+  tbody.innerHTML = "";
 
-    sites.forEach((site) => {
-      const row = document.createElement("tr");
-      const deviceList = site.devices.map((d) => d.deviceId).join(", ");
+  sites.forEach((site) => {
+    const row = document.createElement("tr");
+    const deviceList = site.devices.map((d) => d.deviceId).join(", ");
+    const statusList = site.devices.map((d) => {
+      const diff = Date.now() - new Date(d.lastActive).getTime();
+      return diff < 60000 ? "🟢 Online" : "🔴 Offline";
+    }).join(", ");
+    row.innerHTML = `
+      <td>${new Date(site.createdAt).toLocaleString()}</td>
+      <td>${site.locationName ?? "N/A"}</td>
+      <td>${site.createdBy ?? "N/A"}</td>
+      <td>${deviceList || "N/A"}</td>
+      <td>${statusList}</td>
+    `;
+    tbody.appendChild(row);
+  });
 
-      row.innerHTML = `
-        <td>${site.locationName}</td>
-        <td>${new Date(site.createdAt).toLocaleString()}</td>
-        <td>${site.createdBy}</td>
-        <td>${deviceList}</td>
-      `;
-
-      tbody.appendChild(row);
-    });
-  } catch (err) {
-    console.error("Lỗi khi lấy danh sách site:", err);
-  }
 }
 
-document.addEventListener("DOMContentLoaded", loadSiteList);
+setInterval(fetchData, 1000);
+fetchData(); // Gọi lần đầu khi tải trang

@@ -8,7 +8,7 @@
   <style> 
     body {
       font-family: sans-serif;
-      padding: 40px;
+      padding: 120px;
     }
 
     button {
@@ -101,21 +101,30 @@
     
     <hr />
     <h2>Danh Sách Site (Bảng)</h2>
-    <table id="site-table" cellpadding="10" cellspacing="0">
-    <thead>
-        <tr>
-        <th>Địa Điểm</th>
-        <th>Người Tạo</th>
-        <th>Device ID(s)</th>
-        <th>Trạng Thái Hoạt Động</th>
-        <th>Điều Khiển</th>
-        </tr>
-    </thead>
-    <tbody id="site-table-body">
+      <table>
+        <thead>
+          <tr>
+            <th>Thời Điểm Tạo Site </th>
+            <th>Địa Điểm</th>
+            <th>Người Tạo</th>
+            <th>Device ID(s)</th>
+            <th>Trạng Thái Hoạt Động </th>
+          </tr>
+        </thead>
+        <tbody id="sitetable">
         <!-- Hàng sẽ được thêm ở đây bằng JavaScript -->
-    </tbody>
-    </table>
+        </tbody>
+
+        <tbody id="site-table">
+          <!-- Hàng sẽ được thêm ở đây bằng JavaScript -->
+        </tbody>
+      </table>
 
   <script src="site.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      loadSiteList();
+    });
+  </script>
 </body>
 </html>

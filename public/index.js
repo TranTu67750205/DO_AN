@@ -17,6 +17,7 @@ async function fetchData() {
       `;
       tableBody.appendChild(row);
     });
+
   }
   
   setInterval(fetchData, 1000);
