@@ -1,10 +1,15 @@
 const mongoose = require("mongoose");
+const deviceSchema = new mongoose.Schema({
+  deviceId: String,
+  lastActive: { type: Date, default: Date.now }, // Nếu cần
+});
 
 const siteSchema = new mongoose.Schema({
   locationName: String,
-  createdAt: { type: Date, default: Date.now },
   createdBy: String,
-  devices: String,
+  devices: [deviceSchema],
+  createdAt: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model("Site", siteSchema);
+const Sitedata = mongoose.model("Site", siteSchema);
+module.exports = Sitedata;

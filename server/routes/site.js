@@ -1,7 +1,7 @@
 // server/routes/sites.js
 const express = require("express");
 const router = express.Router();
-const Site = require("../models/sitemodel");
+const Sitedata = require("../models/sitemodel");
 
 // Helper: xác định trạng thái thiết bị
 function getDeviceStatus(lastActive) {
@@ -10,33 +10,22 @@ function getDeviceStatus(lastActive) {
   return diff < 60000 ? "Hoạt động" : "Không hoạt động";
 }
 
-// Lấy danh sách tất cả site kèm device + trạng thái
-router.get("/", async (req, res) => {
+// Lấy danh sách tất cả site kèm device 
+router.get("/load", async (req, res) => {  
   try {
-    const sites = await Site.find();
-    const sitesWithStatus = sites.map((site) => {
-      const updatedDevices = site.devices.map((device) => ({
-        ...device.toObject(),
-        status: getDeviceStatus(device.lastActive),
-      }));
-      return {
-        ...site.toObject(),
-        devices: updatedDevices,
-      };
-    });
-    res.json(sitesWithStatus);
+    const data = await Sitedata.find().limit(10);
+    res.json(data);
   } catch (err) {
-    res.status(500).json({ error: "Lỗi lấy danh sách site" });
+    res.status(500).json({ error: "Lỗi lấy dữ liệu" });
   }
 });
 
 // Tạo site mới
 router.post("/add", async (req, res) => {
-  const { name, createdBy, devices } = req.body;
+  const { locationName, createdBy, devices } = req.body;
   try {
-    const newSite = new Site({
+    const newSite = new Sitedata({
       locationName,
-      createdAt: new Date(),
       createdBy,
       devices: devices || [],
     });

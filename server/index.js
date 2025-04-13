@@ -6,7 +6,8 @@
   const mongoose = require("mongoose");
   //import model ESPdata
   const ESPdata = require("./models/sensormodel");
-
+  //import model verifySchema
+  const IDVerification = require("./models/devicemodel");
   // Đọc dữ liệu JSON từ request
   app.use(express.json());
 
@@ -23,16 +24,16 @@
 
   // Kết nối với Mosquitto MQTT Broker
   const MQTT_BROKER = "mqtt://192.168.1.139:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
-  const MQTT_TOPIC = "sensor/data"; // Topic ESP32 gửi dữ liệu
-
+  const DATA_TOPIC = "sensor/data"; // Topic ESP32 gửi dữ liệu
+  const ID_TOPIC = "ID/data"; // Topic ESP32 gửi dữ liệu
   const mqttClient = mqtt.connect(MQTT_BROKER);
 
   // Khi kết nối thành công với MQTT Broker
   mqttClient.on("connect", () => {
       console.log("Đã kết nối với MQTT Broker");
-      mqttClient.subscribe(MQTT_TOPIC, (err) => {
+      mqttClient.subscribe([DATA_TOPIC, ID_TOPIC], (err) => {
           if (!err) {
-              console.log(`Đã subscribe topic: ${MQTT_TOPIC}`);
+              console.log(`Đã subscribe các topic: ${DATA_TOPIC}, ${ID_TOPIC} `);
           }
       });
   });
@@ -44,15 +45,16 @@
     try {
       // Chuyển đổi JSON từ ESP32
         const data = JSON.parse(message.toString()); 
-        const deviceId = data.id;
 
         // Cập nhật thời gian hoạt động của thiết bị
         /*
+        const deviceId = data.id;
         Site.updateOne(
           { "devices.deviceId": deviceId },
           { $set: { "devices.$.lastActive": new Date() } }
         );*/ 
 
+      if(topic === "sensor/data"){
         const newSensorData = new ESPdata({
           id: data.id,
           temperature: data.temp,
@@ -64,7 +66,22 @@
         newSensorData.save()
             .then(() => console.log("Dữ liệu đã lưu vào MongoDB"))
             .catch(err => console.error("Lỗi lưu dữ liệu:", err));
-    } catch (error) {
+      }
+      else if (topic === "ID/data") {
+        // Lưu gói tin xác minh ID
+        const newVerify = new IDVerification({
+          type: data.type,
+          id: data.id,
+          timestamp: new Date(),
+          raw: data // Lưu cả gói JSON nếu cần thêm trường sau này
+        });
+  
+        newVerify.save()
+          .then(() => console.log("✅ Gói tin xác minh ID đã lưu vào MongoDB"))
+          .catch(err => console.error("❌ Lỗi lưu ID:", err));
+      }
+    } 
+    catch (error) {
         console.error("Dữ liệu nhận không hợp lệ:", error);
     }
   });
