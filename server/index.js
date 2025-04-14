@@ -3,6 +3,9 @@
   const cors = require("cors");
   const app = express();
   const port = 3000;
+  
+  const QRCode = require('qrcode');  
+
   const mongoose = require("mongoose");
   //import model ESPdata
   const ESPdata = require("./models/sensormodel");
@@ -39,7 +42,7 @@
   });
 
   // Nhận dữ liệu từ ESP32 qua MQTT
-  mqttClient.on("message", (topic, message) => {
+  mqttClient.on("message", async (topic, message) => {
     console.log(`Nhận dữ liệu từ ${topic}: ${message.toString()}`);
 
     try {
@@ -68,17 +71,23 @@
             .catch(err => console.error("Lỗi lưu dữ liệu:", err));
       }
       else if (topic === "ID/data") {
+        const existing = await IDVerification.findOne({ id: data.id });
         // Lưu gói tin xác minh ID
-        const newVerify = new IDVerification({
-          type: data.type,
-          id: data.id,
-          timestamp: new Date(),
-          raw: data // Lưu cả gói JSON nếu cần thêm trường sau này
-        });
-  
-        newVerify.save()
-          .then(() => console.log("✅ Gói tin xác minh ID đã lưu vào MongoDB"))
-          .catch(err => console.error("❌ Lỗi lưu ID:", err));
+        if (!existing) {
+          const newVerify = new IDVerification({
+            type: data.type,
+            id: data.id,
+            timestamp: new Date(),
+            raw: data // Lưu cả gói JSON nếu cần thêm trường sau này
+          });
+    
+          await newVerify.save()
+            .then(() => console.log("✅ Gói tin xác minh ID đã lưu vào MongoDB"))
+            .catch(err => console.error("❌ Lỗi lưu ID:", err));
+        }
+        else {
+          console.log("⚠️ ID đã tồn tại, không lưu trùng:", data.id);
+        }
       }
     } 
     catch (error) {
@@ -97,6 +106,10 @@
   // API lấy dữ liệu từ collection sites 
   const siteRoutes = require("./routes/site");
   app.use("/api/sites", siteRoutes);
+
+  // API lấy dữ liệu từ collection IDVerify
+  const verifyRoutes = require("./routes/device");
+  app.use("/api", verifyRoutes);
 
   // khởi động server 
   app.listen(port, () => {
