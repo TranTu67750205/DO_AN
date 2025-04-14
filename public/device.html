@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Device Verification</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .device-card { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 250px; text-align: center; }
+    .verified { background-color: #e0ffe0; }
+    .unverified { background-color: #fff3cd; }
+    .qr { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Device Verification</h2>
+
+  <h3>Unverified Devices</h3>
+  <div id="unverifiedDevices"></div>
+
+  <h3>Verified Devices</h3>
+  <div id="verifiedDevices"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="device.js"></script>
+</body>
+</html>
