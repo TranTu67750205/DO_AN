@@ -2,6 +2,8 @@
 const express = require("express");
 const router = express.Router();
 const Sitedata = require("../models/sitemodel");
+const device_verifi = require("../models/devicemodel");
+const ESPdata = require("../models/sensormodel");
 
 // Helper: xác định trạng thái thiết bị
 function getDeviceStatus(lastActive) {
@@ -9,6 +11,16 @@ function getDeviceStatus(lastActive) {
   const diff = now - new Date(lastActive).getTime();
   return diff < 60000 ? "Hoạt động" : "Không hoạt động";
 }
+
+//lấy danh sách devices 
+router.get("/devices_verified", async (req, res) => {  
+  try {
+    const data = await device_verifi.find({ verified: true , type: 'id' }).sort({ timestamp: -1 });
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: "Lỗi lấy dữ liệu" });
+  }
+});
 
 // Lấy danh sách tất cả site kèm device 
 router.get("/load", async (req, res) => {  
@@ -24,15 +36,58 @@ router.get("/load", async (req, res) => {
 router.post("/add", async (req, res) => {
   const { locationName, createdBy, devices } = req.body;
   try {
-    const newSite = new Sitedata({
+    const site = new Sitedata({
       locationName,
       createdBy,
-      devices: devices || [],
+      devices,
     });
-    await newSite.save();
+
+    await site.save();
     res.json({ message: "Tạo site thành công" });
   } catch (err) {
     res.status(500).json({ error: "Lỗi tạo site" });
+  }
+});
+
+const THRESHOLD_MINUTES = 1;
+
+router.post("/status-devices", async (req, res) => {
+  try {
+    const { deviceIds } = req.body;
+    const statuses = [];
+
+    // Lấy 20 bản ghi mới nhất từ toàn bộ ESPdata
+    //const recentRecords = await ESPdata.find().sort({ timestamp: -1 }).limit(20);
+    const now = new Date();
+
+    for (const id of deviceIds) {
+      const latestRecord = await ESPdata.findOne({ id }).sort({ timestamp: -1 });
+
+      if (latestRecord) {
+        const diffMs = now - new Date(latestRecord.timestamp);
+        const diffMinutes = diffMs / (1000 * 60);
+
+        const isActive = diffMinutes <= THRESHOLD_MINUTES;
+        statuses.push({
+          deviceId: id,
+          status: isActive ? "🟢 Online" : "🔴 Offline",
+          lastSeen: latestRecord.timestamp,
+        });
+      }
+      else {
+        statuses.push({
+          deviceId: id,
+          status: "🔴 Offline",
+          lastSeen: null,
+        });
+      }
+    }
+    console.log("📊 Kết quả trạng thái:", statuses);
+
+    res.json(statuses);
+  } catch (err) {
+    console.error("Lỗi truy vấn trạng thái thiết bị:", err);
+    res.status(500).json({ error: "Lỗi máy chủ" });
   }
 });
 

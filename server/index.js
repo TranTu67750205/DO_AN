@@ -26,7 +26,7 @@
       .catch(err => console.error("Lỗi kết nối MongoDB:", err));
 
   // Kết nối với Mosquitto MQTT Broker
-  const MQTT_BROKER = "mqtt://192.168.1.139:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
+  const MQTT_BROKER = "mqtt://192.168.1.10:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
   const DATA_TOPIC = "sensor/data"; // Topic ESP32 gửi dữ liệu
   const ID_TOPIC = "ID/data"; // Topic ESP32 gửi dữ liệu
   const mqttClient = mqtt.connect(MQTT_BROKER);
