@@ -5,18 +5,24 @@ const Sitedata = require("../models/sitemodel");
 const device_verifi = require("../models/devicemodel");
 const ESPdata = require("../models/sensormodel");
 
-// Helper: xác định trạng thái thiết bị
-function getDeviceStatus(lastActive) {
-  const now = Date.now();
-  const diff = now - new Date(lastActive).getTime();
-  return diff < 60000 ? "Hoạt động" : "Không hoạt động";
-}
 
 //lấy danh sách devices 
 router.get("/devices_verified", async (req, res) => {  
   try {
-    const data = await device_verifi.find({ verified: true , type: 'id' }).sort({ timestamp: -1 });
-    res.json(data);
+    // 1. Lấy tất cả thiết bị đã xác minh
+    const verifiedDevices = await device_verifi.find({ "verified": true });
+    const verifiedIds = verifiedDevices.map(d => d.id);
+
+    // 2. Lấy tất cả thiết bị đã được gán vào site
+    const usedDevices = await Sitedata.distinct("devices");
+
+    // 3. Lọc ra thiết bị chưa gán vào site nào
+    const availableIds = verifiedIds.filter(id => !usedDevices.includes(id));
+
+    // 4. Trả về mảng object chứa id (nếu frontend cần)
+    const result = availableIds.map(id => ({ id }));
+    res.json(result);
+    console.log("📊 Kết quả device:", result);
   } catch (err) {
     res.status(500).json({ error: "Lỗi lấy dữ liệu" });
   }
@@ -104,13 +110,21 @@ router.put("/update/:id", async (req, res) => {
 });
 
 // Xóa site
-router.delete("/delete/:id", async (req, res) => {
-  const { id } = req.params;
+router.delete("/delete/:siteId", async (req, res) => {
   try {
-    await Site.findByIdAndDelete(id);
-    res.json({ message: "Xóa site thành công" });
+    const siteId = req.params.siteId;
+    console.log("📊 Kết quả ID của site cần xóa:", siteId);
+
+    const deleted = await Sitedata.findByIdAndDelete(siteId);
+
+    if (!deleted) {
+      return res.status(404).json({ message: "Không tìm thấy site để xóa" });
+    }
+
+    res.json({ message: "Đã xóa site thành công" });
   } catch (err) {
-    res.status(500).json({ error: "Lỗi xóa site" });
+    console.error("Lỗi khi xóa site:", err);
+    res.status(500).json({ error: "Lỗi máy chủ khi xóa site" });
   }
 });
 
