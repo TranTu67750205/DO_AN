@@ -23,6 +23,7 @@ async function addDeviceInput() {
       method: "GET"
     });
     const devices = await res.json();
+    console.log("📊 Kết quả device:", devices);
 
     devices.forEach(device => {
       const input = document.createElement("div");
@@ -118,21 +119,73 @@ async function loadSiteList() {
     } catch (err) {
       console.error(`Lỗi khi tải trạng thái của site ${site.locationName}:`, err);
     }
-
+  
     site.devices.forEach((deviceID, index) => {
       const row = document.createElement("tr");
-      row.innerHTML = `
-      ${index === 0 ? `<td rowspan="${site.devices.length}">${new Date(site.createdAt).toLocaleString()}</td>` : ""}
-      ${index === 0 ? `<td rowspan="${site.devices.length}">${site.locationName}</td>` : ""}
-      ${index === 0 ? `<td rowspan="${site.devices.length}">${site.createdBy}</td>` : ""}
-      <td>${deviceID}</td>
-      <td>${statusMap[deviceID] || "🔴 Offline"}</td>
-    `;
+ 
+      if (index === 0) {
+        const createdAtCell = document.createElement("td");
+        createdAtCell.rowSpan = site.devices.length;
+        createdAtCell.textContent = new Date(site.createdAt).toLocaleString();
+        row.appendChild(createdAtCell);
+    
+        const locationCell = document.createElement("td");
+        locationCell.rowSpan = site.devices.length;
+        locationCell.textContent = site.locationName;
+        row.appendChild(locationCell);
+    
+        const createdByCell = document.createElement("td");
+        createdByCell.rowSpan = site.devices.length;
+        createdByCell.textContent = site.createdBy;
+        row.appendChild(createdByCell);
+      }
+    
+      const deviceCell = document.createElement("td");
+      deviceCell.textContent = deviceID;
+      row.appendChild(deviceCell);
+    
+      const statusCell = document.createElement("td");
+      statusCell.textContent = statusMap[deviceID] || "🔴 Offline";
+      row.appendChild(statusCell);
+      
+      // Nếu là dòng đầu tiên thì thêm nút xoá vào ô cuối
+      
+      if (index === 0) {
+        const deleteCell = document.createElement("td");
+        deleteCell.rowSpan = site.devices.length;
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "🗑️ Xóa site";
+        deleteBtn.className = "bounce-button";
+        deleteBtn.onclick = () => deleteSite(site._id);
+        deleteCell.appendChild(deleteBtn);
+        row.appendChild(deleteCell);
+      }
+      
 
     tbody.appendChild(row);
     });
   }
 
+}
+
+async function deleteSite(siteId) {
+  try {
+    const res = await fetch(`http://localhost:3000/api/sites/delete/${siteId}`, {
+      method: "DELETE",
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
+      alert("Đã xóa site thành công");
+      loadSiteList(); // refresh lại danh sách
+    } else {
+      alert("Lỗi khi xóa site: " + result.message);
+    }
+  } catch (err) {
+    console.error("Lỗi khi gửi yêu cầu xóa:", err);
+    alert("Lỗi máy chủ khi xóa site");
+  }
 }
 
 setInterval(fetchData, 1000);
