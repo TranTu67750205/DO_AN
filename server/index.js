@@ -26,7 +26,7 @@
       .catch(err => console.error("Lỗi kết nối MongoDB:", err));
 
   // Kết nối với Mosquitto MQTT Broker
-  const MQTT_BROKER = "mqtt://192.168.1.10:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?
+  const MQTT_BROKER = "mqtt://192.168.1.2:1883"; // Địa chỉ Mosquitto, làm sao để kiểm tra địa chỉ của mosquitto?      .1.2    .1.139     .93.18 
   const DATA_TOPIC = "sensor/data"; // Topic ESP32 gửi dữ liệu
   const ID_TOPIC = "ID/data"; // Topic ESP32 gửi dữ liệu
   const mqttClient = mqtt.connect(MQTT_BROKER);
@@ -58,6 +58,16 @@
         );*/ 
 
       if(topic === "sensor/data"){
+        const deviceId = data.id;
+
+        // Kiểm tra thiết bị đã xác minh chưa
+        const verifiedDevice = await IDVerification.findOne({ id: deviceId, verified: true });
+      
+        if (!verifiedDevice) {
+          console.warn(`❌ Thiết bị ${deviceId} chưa xác minh không lưu dữ liệu.`);
+          return; // Ngắt ở đây, không tạo bản ghi
+        }
+
         const newSensorData = new ESPdata({
           id: data.id,
           temperature: data.temp,
